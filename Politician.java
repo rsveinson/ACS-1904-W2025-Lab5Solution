@@ -19,13 +19,14 @@ public class Politician{
         riding = r;
         party = Party.valueOf(p.toUpperCase());
     }
-    
-    // public Politician(String fn, String ln, String r, String p){
-        // firstName = fn;
-        // lastName = ln;
-        // riding = r;
+
+    public Politician(){
+        firstName = "Unknown";
+        lastName = "Unknown";
+        riding = "Unknown";
+        // don't set the party field
         // party = p;
-    // }
+    }// end no-arg
 
     // getters
     public String getFirstName(){
@@ -60,14 +61,6 @@ public class Politician{
     public void setParty(String p){
         party = Party.valueOf(p.toUpperCase());
     }
-    
-    // public void setParty(String p){
-        // party = p;
-    // }
-    
-    // public void setParty(String p){
-        // party = p;
-    // }
 
     // Utilities
     public String getName(){
